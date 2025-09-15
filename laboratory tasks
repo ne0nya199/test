@@ -22,4 +22,4 @@ def calculate_equation():
 
 print(calculate_equation())
 
-# when x equal to 1.5 the answer will be 58.53557
+# when x equal to 1.5 the answer will be 30.70759
