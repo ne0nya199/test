@@ -13,7 +13,7 @@ def calculate_equation():
         if (10 * (2 + x)) <= 0 or (10 * (2 - x)) <= 0:
             return "Error, ln() need to be positive"
 
-        y = ((e ** (2 * x)) * math.log(10 * (2 + x))) - ((2 ** (2 * x)) * math.log(10 * (2 - x)))
+        y = ((e ** (2 * x)) * math.log(2 + x)) - ((2 ** (2 * x)) * math.log(2 - x))
         return f"answer is: {round(y , 5)}"
 
     except ValueError:
