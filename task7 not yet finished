@@ -1,0 +1,32 @@
+def checkModuleOfFirstElm():
+    try:
+        countOfNums = int(input("enter count of numbers: "))
+        arrayNums = []
+        # equalElementsInArray = -1
+
+        for userInteraction in range(countOfNums):
+            numsOfUser = int(input())
+            arrayNums.append(numsOfUser)
+
+        print("numbers in array:", arrayNums[countOfNums - 1])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    except ValueError:
+        print("Please, enter a number")
+
+
+checkModuleOfFirstElm()
+
