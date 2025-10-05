@@ -8,8 +8,6 @@ def checkModuleOfFirstElm():
             numsOfUser = int(input())
             arrayNums.append(numsOfUser)
 
-        print("numbers in array:", arrayNums[countOfNums - 1])
-
         for x in range(countOfNums):
             if abs(arrayNums[0]) == abs(arrayNums[0 + (x - 1)]):
                 x += 1
