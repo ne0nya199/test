@@ -13,6 +13,8 @@ def checkModule():
         for b in range(countOfNums):
             if arrayNums[takenNum] < 0:
                 takenNum += 1
+                checkedElement += 1
+
             else:
                 if arrayNums[checkedElement] > 0:
                     if checkedElement < countOfNums - 1:
