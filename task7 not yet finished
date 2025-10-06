@@ -1,16 +1,31 @@
-def checkModuleOfFirstElm():
+def checkModule():
     try:
         countOfNums = int(input("enter count of numbers: "))
         arrayNums = []
-        # equalElementsInArray = -1
 
         for userInteraction in range(countOfNums):
             numsOfUser = int(input())
             arrayNums.append(numsOfUser)
 
-        print("numbers in array:", arrayNums[countOfNums - 1])
+        takenNum = 0
+        chekedlement = 0
 
-
+        for b in range(countOfNums):
+            if arrayNums[takenNum] < 0:
+                takenNum += 1
+                countOfNums -= 1
+        else:
+            chekedlement += takenNum + 1
+            if arrayNums[chekedlement] > 0:
+                print("false")
+            else:
+                for x in range(countOfNums - 1):
+                    if abs(arrayNums[takenNum]) < abs(arrayNums[chekedlement]):
+                        print("module of element:", arrayNums[takenNum], ", lesser than module of:", arrayNums[chekedlement])
+                        if chekedlement + 1 != countOfNums:
+                            chekedlement += 1
+                        else:
+                            takenNum += 1
 
 
 
@@ -28,5 +43,4 @@ def checkModuleOfFirstElm():
         print("Please, enter a number")
 
 
-checkModuleOfFirstElm()
-
+checkModule()
