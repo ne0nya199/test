@@ -38,8 +38,6 @@ def checkModule():
                                         break
                                 else:
                                     break
-
-
     except ValueError:
         print("Please, enter a number")
 
