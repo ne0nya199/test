@@ -13,7 +13,7 @@ def copyFiles():
         else:
             indexOfnum += 1
     flashDrive[0] = flashDrive[0].replace(str(initialValue), str(int_b))
-    print("u have: ", flashDrive[0], "| ur folders:", flashDrive[1: len(flashDrive)], "| remaining folders on pc: ", strLaptop)
+    print("u have: ", flashDrive[0], "| your folders:", flashDrive[1: len(flashDrive)], "| remaining folders on pc: ", strLaptop)
 
 
 def pasteFiles():
