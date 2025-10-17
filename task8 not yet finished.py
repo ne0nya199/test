@@ -8,7 +8,6 @@ print(folds)
 
 
 
-https://drive.google.com/drive/folders/1w5KgUH4gPY60KZkWNZ4D-5W2JDXh45ui?usp=drive_link
 
 
 
