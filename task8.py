@@ -24,7 +24,7 @@ def pasteFiles():
             int_b += flashDrive[1]
             flashDrive.remove(flashDrive[1])
     flashDrive[0] = flashDrive[0].replace(str(initialValue), str(int_b))
-    print("u have: ", flashDrive[0], "| ur folders:", flashDrive[1: len(flashDrive)], "| remaining folders on your pc: ", userLaptop)
+    print("u have: ", flashDrive[0], "| your folders:", flashDrive[1: len(flashDrive)], "| remaining folders on your pc: ", userLaptop)
 
 copyFiles()
 pasteFiles()
