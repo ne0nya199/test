@@ -1,0 +1,33 @@
+flashDrive = ["100 mb"]
+
+strLaptop = [15, 17, 18, 19 , 100]
+
+userLaptop = []
+
+
+def copyFiles():
+    int_b = int(flashDrive[0].replace(' mb', ''))
+    initialValue = int_b
+    for x in range(len(strLaptop)):
+        if int_b >= strLaptop[0]:
+            flashDrive.append(strLaptop[0])
+            int_b -= strLaptop[0]
+            strLaptop.remove(strLaptop[0])
+    flashDrive[0] = flashDrive[0].replace(str(initialValue), str(int_b))
+    print("u have: ", flashDrive[0], "| ur folders:", flashDrive[1: len(flashDrive)], "| remaining folders on pc: ", strLaptop)
+
+
+def pasteFiles():
+    int_b = int(flashDrive[0].replace(' mb', ''))
+    initialValue = int_b
+    for x in range(1, len(flashDrive)):
+            userLaptop.append(flashDrive[1])
+            int_b += flashDrive[1]
+            flashDrive.remove(flashDrive[1])
+    flashDrive[0] = flashDrive[0].replace(str(initialValue), str(int_b))
+    print("u have: ", flashDrive[0], "| ur folders:", flashDrive[1: len(flashDrive)], "| remaining folders on your pc: ", userLaptop)
+
+copyFiles()
+pasteFiles()
+copyFiles()
+pasteFiles()
