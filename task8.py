@@ -1,9 +1,6 @@
-flashDrive = ["100 mb"]
-
+flashDrive = ["110 mb"]
 strLaptop = [15, 17, 18, 19 , 100]
-
 userLaptop = []
-
 
 def copyFiles():
     int_b = int(flashDrive[0].replace(' mb', ''))
