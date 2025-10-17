@@ -22,7 +22,8 @@ def checkModule():
                 else:
                     for x in range(countOfNums):
                         if abs(arrayNums[takenNum]) < abs(arrayNums[checkedElement]):
-                            print(f"module of element {takenNum}: ", arrayNums[takenNum], f", lesser than module of {checkedElement}: ", arrayNums[checkedElement])
+                            if arrayNums[checkedElement] < 0:
+                                print(f"module of element {takenNum}: ", arrayNums[takenNum], f", lesser than module of {checkedElement}: ", arrayNums[checkedElement])
                         if checkedElement != countOfNums - 1:
                             checkedElement += 1
                             while arrayNums[checkedElement] > 0 and checkedElement < countOfNums - 1:
