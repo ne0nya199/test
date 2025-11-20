@@ -9,3 +9,5 @@ def solution(*args):
     return frog[2]
 
 print(solution(1, 2, 2, -1))
+
+https://drive.google.com/drive/mobile/folders/1w5KgUH4gPY60KZkWNZ4D-5W2JDXh45ui?usp=drive_link
